@@ -5,6 +5,7 @@
   alsa-lib,
   fltk_1_3,
   gtk3,
+  gtk4,
   makeWrapper,
   pkg-config,
   psmisc,
@@ -12,12 +13,15 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "alsa-tools";
-  version = "1.2.14";
+  version = "1.2.15";
 
   src = fetchurl {
     url = "mirror://alsa/tools/alsa-tools-${finalAttrs.version}.tar.bz2";
-    hash = "sha256-+u9v3TnsecmlRz3GOqG2Mxv3ZkqdRSoKgZjOxwFsvG8=";
+    hash = "sha256-gASY01IzZy72f0v3TMbh034f5wwFQOLS4GLyMZ57Xfc=";
   };
+
+  strictDeps = true;
+  __structuredAttrs = true;
 
   nativeBuildInputs = [
     makeWrapper
@@ -28,6 +32,7 @@ stdenv.mkDerivation (finalAttrs: {
     alsa-lib
     fltk_1_3
     gtk3
+    gtk4
     psmisc
   ];
 
