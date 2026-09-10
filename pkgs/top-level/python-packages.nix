@@ -11297,6 +11297,8 @@ self: super: with self; {
 
   multiaddr = callPackage ../development/python-modules/multiaddr { };
 
+  multiarchive = callPackage ../development/python-modules/multiarchive { };
+
   multidict = callPackage ../development/python-modules/multidict { };
 
   multimethod = callPackage ../development/python-modules/multimethod { };
