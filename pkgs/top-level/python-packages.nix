@@ -20575,6 +20575,8 @@ self: super: with self; {
 
   textual-dev = callPackage ../development/python-modules/textual-dev { };
 
+  textual-drivers = callPackage ../development/python-modules/textual-drivers { };
+
   textual-fastdatatable = callPackage ../development/python-modules/textual-fastdatatable { };
 
   textual-image = callPackage ../development/python-modules/textual-image { };
