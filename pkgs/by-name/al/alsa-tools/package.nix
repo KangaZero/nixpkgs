@@ -31,7 +31,6 @@ stdenv.mkDerivation (finalAttrs: {
 
   buildInputs = [
     alsa-lib
-    fltk_1_3
     gtk3
     gtk4
     psmisc
